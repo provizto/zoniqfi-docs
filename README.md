@@ -1,91 +1,82 @@
-# Provizto Protocol ($VZT)
+# ⚡ ZoniqFi Hub — Premium Solana White-Label dApp Infrastructure
 
-Next-generation Decentralized Asset Management and Liquidity Optimization Protocol custom-engineered for the Solana Blockchain. Provizto introduces a mathematically driven, non-inflationary ecosystem backed by **Real Yield** revenue distribution, multi-asset private routing, and algorithmic supply deflation controls.
+Welcome to the official technical specification and deployment portal for the **ZoniqFi Hub**. This premium, turnkey dApp infrastructure is engineered specifically for the Solana blockchain. Built using React, Vite, and fully integrated with the **Jupiter Price API v2** and **Jito MEV-Protection Engine**, this repository provides a high-performing utility suite for project owners and token creators looking to supercharge holder retention, accelerate trading volume, and establish a real ecosystem within 24 hours.
 
-🌐 **Live Demo dApp Dashboard:** [https://vzt-beige.vercel.app/](https://vzt-beige.vercel.app/)
-
----
-
-## 🚀 Core Functional Architecture
-
-### 1. Multi-Asset AMM DEX Swap
-* **Single-Gateway Tokenomics:** To generate sustained buying pressure and token velocity, the protocol enforces a single-destination routing matrix. All incoming liquidity assets (**USDC, USDT, SOL, WSOL**) trade exclusively directly into **$VZT** (and vice-versa from $VZT to USDC) backed by simulated automated smart-contract conversion at the ledger level.
-* **Private Jito Routing Engine:** Transactions are securely routed via private Jito validator bundles, providing complete immunity against predatory MEV front-running and front-row sandwich exploits.
-* **Anti-Wash Trading Constraints:** On-chain ledger filters run daily protocol loops to track, detect, and mitigate inorganic volume inflation anomalies.
-
-### 2. Automated Yield Optimizer Vaults
-* **Agnostic Cross-Protocol Aggregation:** User-deposited USDC is programmatically deployed into top-tier Solana yield instruments (e.g., Kamino, Meteora, Marginfi) via non-custodial smart contracts, organically scaling the Protocol's Total Value Locked (TVL).
-* **Compounding Mechanics:** Operates on a target interest metric of **0.11% daily**, which mathematically compounds to a **Boosted APY of up to 49.1% annually** ($APY = (1 + 0.0011)^{365} - 1$).
-* **Fee Underwriting Security:** The yield engine stability is fundamentally insulated from market volatility as it is constantly backstopped by **40% of all global swap fees** collected by the platform.
-
-### 3. VZT Programmed Lock Pool (Real Yield Engine)
-* **Non-Inflationary Incentives:** Provizto rejects traditional inflationary token minting rewards. Stakers who lock $VZT are rewarded exclusively in **stable USDC**, derived directly from real platform transaction utility.
-* **Dual Interface Multipliers:** Stakers can optimize their processing scores through two distinct cryptographic modes:
-  * **Instant Lock:** Manual entry allocation with a 1.0x Base Processing Weight.
-  * **Boosted Lock (Escrow Bonds):** Time-locked horizons featuring explicit reward multipliers:
-    * *30-Day Horizon:* 1.0x Base Multiplier.
-    * *90-Day Horizon:* 1.5x Boosted Multiplier Weight.
-    * *180-Day Horizon:* 2.5x Maximum Multiplier Weight.
-* **Strict 7-Day Epoch Horizon:** Reward allocations accumulate over an immutable **7-day cycle (`604,800,000 ms`) time-lock parameter**. This rigorous network constraint completely neutralizes high-frequency flash-loan vectors and guarantees liquidity layer stabilization.
+As the core developer of this protocol, I offer flexible, enterprise-grade software licenses tailored to your tokenomics and community scale.
 
 ---
 
-## 📊 Tokenomics & Strategic Fee Allocation Matrix
+## 🚀 Key Features & Modular Architecture (Devnet Verified)
 
-Every transaction executed on the Provizto AMM Swap module triggers a baseline **0.3% Protocol Fee** that is programmatically partitioned at the smart contract ledger level:
+The application utilizes an intelligent, built-in **Package Detection Engine** driven by URL parameters (`?pkg=...`). This allows you to pick, choose, and unlock specific modular layers according to your operational budget and community roadmap:
 
-| Target Vault Destination | Fee Split Allocation | Operational Objective |
-| :--- | :---: | :--- |
-| **Yield Optimizer Underwriting** | **40%** | Backstops the 49.1% APY auto-compounding reserves. |
-| **VZT Real Yield Pool** | **30%** | Converted to stable USDC to pay out locked $VZT stakers. |
-| **Affiliate Treasury** | **15%** | Finances multi-tiered on-chain partner rewards. |
-| **Dev & Infrastructure Treasury** | **15%** | Funds network RPC nodes, security audits, and developer upkeep. |
+### 1. AMM DEX Swap (Anti-MEV Secure)
+* **Live Price Feeds:** Automatically syncs real-time market rates every 30 seconds by leveraging Solana's premier liquidity aggregator (Jupiter API v2).
+* **Jito MEV Shield:** Shields retail traders from malicious front-running and sandwich bots using simulated Jito private transaction bundles.
+* **Anti-Wash Trading:** Embedded internal algorithms to track daily transaction cycles, protecting your charts from artificial volume manipulation.
 
-### 👑 Capital Grant Clawback & Repayment Clause
-To ensure institutional financial transparency with our grant providers, the **15% Dev & Infrastructure Treasury** features a built-in automated debt-repayment clawback routing rule:
-* **20% Outflow Split:** Every distribution routed into the Dev Treasury automatically splits **20% of its allocation** to fulfill strategic grant repayment schedules directly into the grantor's monitored address.
-* This architecture proves a sustainable payback model without ever liquidating or diluting the native $VZT market supply.
+### 2. Yield Optimizer Vaults
+* **Auto-Compounding Logic:** Automated asset management protocol offering optimized daily yield simulations (up to 0.11% daily / 49.1% APY).
+* **Interactive Forecast Calculator:** An embedded projection panel (Daily, Monthly, Annual metrics) designed to gamify user interaction and incentivize long-term asset locking.
 
----
+### 3. ZQI Lock & Yield Hub
+* **Cryptographic Staking Epoch:** A secure on-chain locking mechanism for the custom native utility token **$ZQI** bound to a 7-day epoch horizon.
+* **Real Yield Distribution:** Staking rewards are accrued and paid out in stablecoins (USDC), completely mitigating selling pressure on your primary project token.
+* **Deflationary Burn Penalty:** Strict protocol enforcement where premature vault unlocks incur a mandatory 10% deflationary supply burn penalty.
 
-## 🛡️ Sybil-Resistant Affiliate Framework
-
-Provizto features a performance-based, on-chain referral module designed with strict cryptographic guardrails to completely eliminate loop-exploits:
-* **Anti-Sybil Constraints:** The smart contract registry explicitly blocks self-referrals (`SelfReferralNotAllowed` exception) and enforces a mandatory **10-second transaction cooldown timeout** per account path.
-* **Dynamic Reward Tier Metrics:** Commissions scale fluidly based on the cumulative on-chain volume verified from the referred network path:
-  * **Bronze Tier ($0 - $10,000 Volume):** Receives a **10%** commission rate.
-  * **Silver Tier ($10,001 - $100,000 Volume):** Upgraded to an **18%** commission rate.
-  * **Gold Tier (> $100,000 Volume):** Grants a premium VIP **25%** commission rate.
+### 4. Tiered On-Chain Affiliate (Referral System)
+* **Sybil Attack Prevention:** Imposes a strict cooldown rate-limit (maximum 1 transaction per 10 seconds) to completely block multi-wallet bot manipulation.
+* **Dynamic Tiering Matrix:** Automated commission tier calculation based on user referral trading volume:
+    * **Bronze Tier:** Volume $0 - $10,000 ➜ 10% Commission
+    * **Silver Tier:** Volume $10,001 - $100,000 ➜ 18% Commission
+    * **Gold Tier:** Volume > $100,000 ➜ 25% Commission
 
 ---
 
-## 🔥 Emergency Hard-Stop Protocol (Deflationary Burn)
+## 📊 Live Market Data Integration Matrix (Jupiter Price API)
 
-If a market participant initiates a premature unlock of capital assets from a Lock contract prior to the designated computational maturity date, the contract triggers the **Emergency Liquidation Clause**:
-1. **20% Principal Penalty:** A mandatory 20% of the locked token principal is instantly deducted based on the `EMERGENCY_BURN_PENALTY_RATE` constraint.
-2. **Permanent Burn Destruction:** The 20% penalty is immediately and irreversibly dispatched to the verified Solana native dead address (`11111111111111111111111111111111`), permanently removing it from the total circulating supply.
-3. **Supply Shock Shadows:** This mechanism protects the liquidity layer from sudden panic-withdrawals while inducing a healthy systemic token scarcity that fundamentally benefits long-term $VZT network holding entities.
+The dApp actively tracks top-tier Solana ecosystem assets in the background using their official on-chain mint addresses:
+
+| Token Asset | Description | Feed Status |
+| :--- | :--- | :--- |
+| **SOL / WSOL** | Native Solana & Wrapped SOL | Live Market Feed |
+| **USDC / USDT** | Major US Dollar Stablecoins | Live Market Feed |
+| **ZQI** | ZoniqFi Utility Token ($0.50 Base) | Locked/Static (Fully Customizable) |
+| **WIF / BONK / POPCAT** | Solana Blue-chip Meme Assets | Live Market Feed |
+| **RENDER** | AI DePIN Network Token | Live Market Feed |
+| **JitoSOL / JUP / PYTH** | Core DeFi & Oracle Infrastructure | Live Market Feed |
 
 ---
 
-## 🛠️ Production Stack Architecture & Verification
+## 💼 Available Licensing Tiers
 
-The dApp frontend prototype is fully optimized for production environments and compiled using a React + Vite deployment pipeline:
+I offer 5 standalone and combined licensing options depending on your token's immediate objectives:
 
-* **Production Framework:** React 18 + Vite Bundler
-* **Styling Layer:** Pure Tailwind CSS Architecture
-* **Global Constants Insulated:** `PROGRAM_ID`, `BASE_EPOCH_HORIZON_MS`, `TOKEN_PRICES`
-* **Target Environment Hosting:** Vercel Global Edge Network
+1.  **Entry / Viral Launch ($499):** AMM Swap + Affiliate System (Perfect for micro-cap meme coins needing rapid volume acceleration).
+2.  **Token Velocity ($1,299):** AMM Swap + Yield Optimizer + Affiliate (Our most popular package to mitigate heavy market sell-offs).
+3.  **Whale Retention Suite ($1,199):** Token Locker Hub + Real Yield USDC Pool + Affiliate (Engineered to lock up circulating supply).
+4.  **Safe Staking Hub ($1,099):** Yield Optimizer + Token Locker Hub (A pure DeFi asset management platform).
+5.  **Ultimate DeFi Suite ($2,499):** Full, unhindered access to all 4-in-1 core modular feature sets for complete ecosystem dominance.
 
-```bash
-# Clone the repository workspace
-git clone [https://github.com/provizto/vzt.git](https://github.com/provizto/vzt.git)
+---
 
-# Navigate into the project root directory
-cd vzt
+## 🛠️ Deployment & White-Label Delivery
 
-# Install the required NPM package node modules
-npm install
+Upon purchase of a software license, I handle the execution and delivery process:
 
-# Build the production distribution bundle
-npm run build
+* **Frontend Customization:** I will fully rebrand the dApp with your token name, logos, custom tickers, color schemes, and official project links.
+* **Domain Routing:** The functional dApp will be deployed to your custom domain or subdomain (e.g., `swap.yourtoken.com`).
+* **Devnet Testing Environment:** By default, your preview build will be launched on **Solana Devnet** to ensure extensive bug-free validation without burning real SOL transaction fees.
+* **Mainnet Switchover:** When you are ready to go live, the core network parameter can be migrated from `"devnet"` to `"mainnet-beta"` inside the configuration file with a single line change.
+
+---
+
+## ✉️ Acquire A License
+
+Ready to elevate your token utility ecosystem? Contact me directly via the official Telegram channel to consult on your deployment parameters, verify custom features, and acquire your commercial dApp license.
+
+* **Official Contact:** [@zoniqfi](https://t.me/zoniqfi)
+
+---
+
+© 2026 ZoniqFi. All Rights Reserved. Premium Solana Software-as-a-Service (SaaS) Infrastructure.
