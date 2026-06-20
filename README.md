@@ -60,6 +60,56 @@ I offer 5 standalone and combined licensing options depending on your token's im
 
 ---
 
+## Total Cost of Ownership (TCO) Overview
+
+================================================================================
+           ZONIQFI ECOSYSTEM INFRASTRUCTURE — COST DISCLOSURE FORM
+================================================================================
+
+[ CLIENT & PROJECT DETAILS ]
+• Client / Team Name: __________________________________________________
+• Primary Token Ticker: ________________________________________________
+• Target Deployment Domain: ____________________________________________
+
+--------------------------------------------------------------------------------
+1. CORE CORE CORE CORE PLATFORM LICENSE FEE (Paid to ZoniqFi Team)
+--------------------------------------------------------------------------------
+[ ] Entry / Viral Launch Suite                 : $499.00
+[ ] Token Velocity Bundle (3-in-1)             : $1,299.00
+[ ] Whale Retention Suite                      : $1,199.00
+[ ] Safe Staking Hub                           : $1,099.00
+[ ] Ultimate DeFi Suite (4-in-1)               : $2,499.00
+
+* Payment Terms: 50% Upfront Deposit ($_________) | 50% Upon Devnet Delivery ($_________)
+* Accepted Method: USDC / SOL via Solana Network
+
+--------------------------------------------------------------------------------
+2. INTERNAL DEVELOPMENT & SETUP CHARGES (Paid to ZoniqFi Team)
+--------------------------------------------------------------------------------
+• Custom Visual UI Rebranding Fee              : INCLUDED in Package
+• Initial Server Routing & Setup (Vercel/DNS)  : INCLUDED in Package
+• Post-Launch Technical Support (First 14 Days) : FREE / INCLUDED
+[ ] Optional Monthly Maintenance Retainer      : $99.00 / month (Optional Add-on)
+
+--------------------------------------------------------------------------------
+3. ESTIMATED EXTERNAL OPERATION COSTS (Third-Party / Client's Expense)
+--------------------------------------------------------------------------------
+The client must fund these directly using their operational wallet/accounts:
+• Custom Domain Registration (.com/.xyz/.io)  : ~$10.00 – $40.00 / year
+• Solana On-Chain Storage Rent (Rent-Exempt)   : ~0.10 – 1.50+ SOL (One-time, Reclaimable)
+• Raydium/Orca Liquidity Pool Creation Fee     : ~0.20 – 2.00 SOL (Solana Network Fee)
+• Production-Grade RPC Node (Helius/QuickNode) : Free tier baseline / Premium at $49.00/mo
+
+--------------------------------------------------------------------------------
+TOTAL PROJECT EST. INITIAL CAPITAL: $_____________ + (~2.5 SOL Network Reserve)
+--------------------------------------------------------------------------------
+
+By proceeding with the upfront deposit, the client acknowledges the pricing layout 
+and agrees to provide the required third-party operational assets when requested.
+
+Authorized Developer Signature: [ ZoniqFi Core ]
+Client Confirmation Sign/Date : _______________________________________________
+
 ## 🛠️ Deployment & White-Label Delivery
 
 Upon purchase of a software license, I handle the execution and delivery process:
