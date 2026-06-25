@@ -17,6 +17,7 @@ The application utilizes an intelligent, built-in **Package Detection Engine** d
 
 ### 2. Yield Optimizer Vaults
 * **Auto-Compounding Logic:** Automated asset management protocol offering optimized daily yield simulations (up to 0.11% daily / 49.1% APY).
+* **Global Trust & Social Proof:** Integrated real-time tracking of Global Vault TVL and Active Depositors counters to foster instant credibility.
 * **Interactive Forecast Calculator:** An embedded projection panel (Daily, Monthly, Annual metrics) designed to gamify user interaction and incentivize long-term asset locking.
 
 ### 3. ZQI Lock & Yield Hub
@@ -26,6 +27,7 @@ The application utilizes an intelligent, built-in **Package Detection Engine** d
 
 ### 4. Tiered On-Chain Affiliate (Referral System)
 * **Sybil Attack Prevention:** Imposes a strict cooldown rate-limit (maximum 1 transaction per 10 seconds) to completely block multi-wallet bot manipulation.
+* **Transparent Commissions Display:** Real-time calculation showing exact claimable USDC commission earnings alongside network volume.
 * **Dynamic Tiering Matrix:** Automated commission tier calculation based on user referral trading volume:
     * **Bronze Tier:** Volume $0 - $10,000 ➜ 10% Commission
     * **Silver Tier:** Volume $10,001 - $100,000 ➜ 18% Commission
@@ -118,6 +120,45 @@ Upon purchase of a software license, I handle the execution and delivery process
 * **Domain Routing:** The functional dApp will be deployed to your custom domain or subdomain (e.g., `swap.yourtoken.com`).
 * **Devnet Testing Environment:** By default, your preview build will be launched on **Solana Devnet** to ensure extensive bug-free validation without burning real SOL transaction fees.
 * **Mainnet Switchover:** When you are ready to go live, the core network parameter can be migrated from `"devnet"` to `"mainnet-beta"` inside the configuration file with a single line change.
+
+---
+
+## 🛠️ Local Installation & Development
+
+Ensure you have [Node.js](https://nodejs.org/) installed on your machine before running the setup commands.
+
+1.  **Clone the Repository:**
+```bash
+    git clone [https://github.com/provizto/zoniqfi.git](https://github.com/provizto/zoniqfi.git)
+    cd zoniqfi-hub
+    ```
+
+2.  **Install Dependencies:**
+```bash
+    npm install
+    ```
+
+3.  **Launch the Local Development Server:**
+```bash
+    npm run dev
+    ```
+    The application will now be live at `https://zoniqfi.com`.
+
+4.  **Testing Modular Package Queries:**
+    Append the query strings to your local URL to test the responsive visual parameters for each package tier:
+    * `https://entry.zoniqfi.com/?pkg=entry`
+    * `https://velocity.zoniqfi.com/?pkg=velocity`
+    * `https://whale.zoniqfi.com/?pkg=whale`
+    * `https://staking.zoniqfi.com/?pkg=staking`
+
+---
+
+## 🌐 Production & Vercel Deployment Ready
+
+This dApp frontend code is fully optimized to ensure a **100% Successful Build Pass** on platforms like Vercel or Netlify. All broken external image references have been thoroughly sanitized to preserve a clean, modern, high-end Web3 UI/UX aesthetic.
+
+* **Default Network Cluster:** `Solana Devnet` (Prevents real SOL gas-fee burn during the client sales pitch and demo phase).
+* **Mainnet Migration:** Simply switch the string variable parameter `SOLANA_NETWORK` from `"devnet"` to `"mainnet-beta"` in the root config file once your client is ready to launch their token ecosystem live.
 
 ---
 
