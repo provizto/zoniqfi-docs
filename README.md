@@ -10,35 +10,23 @@ ZoniqFi is an institutional-grade, modular DeFi infrastructure protocol architec
 
 ZoniqFi resolves toxic MEV extraction (sandwich/front-running attacks) and token emission inflation through an atomic, fee-capitalized economic flywheel.
 
-┌────────────────────────────┐
-                       │   Solana Transaction v1    │
-                       │  (4,096-Byte Atomic Tx)    │
-                       └─────────────┬──────────────┘
-                                     │
-                                     ▼
-                       ┌────────────────────────────┐
-                       │  Jito Block Engine Routing │
-                       │  (Anti-MEV Private Bundle) │
-                       └─────────────┬──────────────┘
-                                     │
-                                     ▼
-                       ┌────────────────────────────┐
-                       │   0.3% Flat Protocol Fee   │
-                       └─────────────┬──────────────┘
-                                     │
-             ┌───────────────────────┼───────────────────────┐
-             │                       │                       │
-             ▼                       ▼                       ▼
-       ┌───────────┐           ┌───────────┐           ┌───────────┐
-       │    40%    │           │    30%    │           │    15%    │
-       │Yield Vault│           │ $ZQI Lock │           │ Affiliate │
-       │(Compounding)          │(USDC Yield│           │ Treasury  │
-       └───────────┘           └───────────┘           └─────┬─────┘
-                                                             │
-                                                   ┌─────────┴─────────┐
-                                                   │  15% Operations   │
-                                                   │ & Core Dev Reserve│
-                                                   └───────────────────┘
+```text
+                  [ Solana Transaction v1 ]
+                  (4,096-Byte Atomic Tx)
+                             │
+                             ▼
+              [ Jito Block Engine Routing ]
+               (Anti-MEV Private Bundle)
+                             │
+                             ▼
+              [ 0.3% Flat Protocol Fee ]
+                             │
+       ┌─────────────┬───────┴─────┬─────────────┐
+       ▼             ▼             ▼             ▼
+    [ 40% ]       [ 30% ]       [ 15% ]       [ 15% ]
+  Yield Vault    $ZQI Lock     Affiliate    Operations
+ (Compounding)  (Real Yield)   Treasury    & Core Dev
+```
 
 ---
 
