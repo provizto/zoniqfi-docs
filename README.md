@@ -52,7 +52,7 @@ ZoniqFi resolves toxic MEV extraction (sandwich/front-running attacks) and token
 * **Deflationary Burn Defense:** Premature emergency unlocks trigger a mandatory **10% penalty burned permanently on-chain**.
 
 ### 4. Secure On-Chain Affiliate (SNS-Integrated Referral)
-* **Solana Name Service Support:** Natively resolves human-readable domain identities (`.sol` / `.sns`) alongside raw Public Keys.
+* **Solana Name Service Support:** Natively resolves human-readable domain identities (.sol / .sns) alongside raw Public Keys.
 * **Anti-Sybil Cooldown Engine:** Enforces a strict rate limit (1 transaction per 10 seconds) to prevent multi-wallet bot manipulation.
 * **3-Tier Volume Rebates:**
   * **Bronze Tier ($0 – $10,000 Volume):** 10% Commission Rebate
@@ -111,36 +111,31 @@ ZoniqFi resolves toxic MEV extraction (sandwich/front-running attacks) and token
 ## 💻 Local Development & Testing
 
 ### Prerequisites
-* [Node.js](https://nodejs.org/) (v18.x or later)
-* [Rust](https://www.rust-lang.org/) & [Cargo](https://doc.rust-lang.org/cargo/)
-* [Solana CLI](https://docs.solana.com/cli/install-solana-cli-tools) (v1.18+)
-* [Anchor Framework](https://www.anchor-lang.com/) (v0.29+)
+* Node.js (v18.x or later)
+* Rust & Cargo
+* Solana CLI (v1.18+)
+* Anchor Framework (v0.29+)
 
-### Installation & Build
+### Installation & Commands
+
 ```bash
-# 1. Clone repository
 git clone [https://github.com/provizto/zoniqfi.git](https://github.com/provizto/zoniqfi.git)
 cd zoniqfi
-
-# 2. Install dependencies
 npm install
-
-# 3. Compile Anchor contracts
 anchor build
-
-# 4. Run local test suite
 anchor test
-
-# 5. Start development server
 npm run dev
+```
 
-🔗 Official Verification Links
-Live dApp (Solana Devnet): https://zoniqfi.com
+---
 
-Smart Contract Repository: https://github.com/provizto/zoniqfi
+## 🔗 Official Verification Links
 
-Technical Documentation: https://github.com/provizto/zoniqfi-docs
+* Live dApp (Solana Devnet): https://zoniqfi.com
+* Smart Contract Repository: https://github.com/provizto/zoniqfi
+* Technical Documentation: https://github.com/provizto/zoniqfi-docs
+* Direct Engineering Channel: https://t.me/zoniqfi
 
-Direct Engineering Channel: @zoniqfi
+---
 
 © 2026 ZoniqFi Protocol. All Rights Reserved. Built for the Solana Ecosystem.
