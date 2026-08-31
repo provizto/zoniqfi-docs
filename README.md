@@ -136,7 +136,11 @@ npm run dev
 
 🔗 Official Verification Links
 Live dApp (Solana Devnet): https://zoniqfi.com
+
 Smart Contract Repository: https://github.com/provizto/zoniqfi
+
 Technical Documentation: https://github.com/provizto/zoniqfi-docs
+
 Direct Engineering Channel: @zoniqfi
+
 © 2026 ZoniqFi Protocol. All Rights Reserved. Built for the Solana Ecosystem.
