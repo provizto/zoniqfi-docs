@@ -133,7 +133,7 @@ anchor test
 
 # 5. Start development server
 npm run dev
-```
+
 🔗 Official Verification Links
 Live dApp (Solana Devnet): https://zoniqfi.com
 Smart Contract Repository: https://github.com/provizto/zoniqfi
