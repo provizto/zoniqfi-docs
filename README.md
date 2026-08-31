@@ -119,7 +119,7 @@ ZoniqFi resolves toxic MEV extraction (sandwich/front-running attacks) and token
 ### Installation & Commands
 
 ```bash
-git clone [https://github.com/provizto/zoniqfi.git](https://github.com/provizto/zoniqfi.git)
+git clone https://github.com/provizto/zoniqfi.git
 cd zoniqfi
 npm install
 anchor build
