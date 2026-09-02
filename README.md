@@ -53,6 +53,7 @@ ZoniqFi resolves toxic MEV extraction (sandwich/front-running attacks) and token
 
 ### 4. Secure On-Chain Affiliate (SNS-Integrated Referral)
 * **Solana Name Service Support:** Natively resolves human-readable domain identities (.sol / .sns) alongside raw Public Keys.
+* **URL Parsing & Self-Referral Prevention:** Programmatic query handling (?ref=) with automated rejection of self-referral transactions.
 * **Anti-Sybil Cooldown Engine:** Enforces a strict rate limit (1 transaction per 10 seconds) to prevent multi-wallet bot manipulation.
 * **3-Tier Volume Rebates:**
   * **Bronze Tier ($0 – $10,000 Volume):** 10% Commission Rebate
